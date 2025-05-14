@@ -1,0 +1,24 @@
+﻿<Application x:Class="PaperFabrkia.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:PaperFabrkia"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+        
+
+
+
+        <ResourceDictionary>
+            <Style x:Key="MainText" TargetType="{x:Type TextBlock}">
+                <Setter Property="FontSize" Value="30" />
+                <Setter Property="FontFamily" Value="Segoe Print" />
+                <Setter Property="Foreground" Value="Black" />
+            </Style>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Style/Texts.xaml" />
+                
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

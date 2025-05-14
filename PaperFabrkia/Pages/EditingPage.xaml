@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="PaperFabrkia.Pages.EditingPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PaperFabrkia.Pages"
+             mc:Ignorable="d" 
+             d:DesignHeight="1080" d:DesignWidth="1920">
+    <StackPanel Background="White">
+        <StackPanel Orientation="Horizontal" Margin="0 10">
+            <TextBlock FontFamily="Segoe Print" Text="Название материала:" FontSize="30" Margin="0 20 20 0"/>
+            <TextBox Text="{Binding NameMaterial}" Width="900"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 10">
+            <TextBlock FontFamily="Segoe Print" Text="Тип материала" FontSize="30" Margin="0 20 20 0"/>
+            <ComboBox ItemsSource="{Binding TypeMaterial}" 
+       SelectedItem="{Binding SelectedType}"
+       Width="200"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 10">
+            <TextBlock FontFamily="Segoe Print" Text="Картинка: " FontSize="30" Margin="0 20 20 0"/>
+            <Button Content="Загрузить картинку" Command="{Binding OpenImageCommand}"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 10">
+            <TextBlock FontFamily="Segoe Print" Text="Остаток:" FontSize="30" Margin="0 20 20 0"/>
+            <TextBox Text="{Binding Ostatok}" Width="900"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 10">
+            <TextBlock FontFamily="Segoe Print" Text="Цена:" FontSize="30" Margin="0 20 20 0"/>
+            <TextBox Text="{Binding Cena}" Width="900"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 10">
+            <TextBlock FontFamily="Segoe Print" Text="Описание:" FontSize="30" Margin="0 20 20 0"/>
+            <TextBox Text="{Binding Opisanie}" Width="900"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 10">
+            <TextBlock FontFamily="Segoe Print" Text="Ед измереения" FontSize="30" Margin="0 20 20 0"/>
+            <TextBox Text="{Binding EdIsmer}" Width="900"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 10">
+            <TextBlock FontFamily="Segoe Print" Text="Количество на скаладе:" FontSize="30" Margin="0 20 20 0"/>
+            <TextBox Text="{Binding KolNaSklade}"  Width="900"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 10">
+            <TextBlock FontFamily="Segoe Print"  Text="Количество в упаковке:" FontSize="30" Margin="0 20 20 0"/>
+            <TextBox Text="{Binding KolVUpakovke}"  Width="900"/>
+        </StackPanel>
+        <Button Width="400" Height="40" FontFamily="Segoe Print"  Content="Редактировать материал" Command="{Binding SaveMaterialCommand}"/>
+
+    </StackPanel>
+</UserControl>

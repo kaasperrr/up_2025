@@ -1,0 +1,143 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="image\default.jpg" />
+    <None Remove="image\Empty.png" />
+    <None Remove="image\акация_древесина.jpg" />
+    <None Remove="image\амазак_древесина.jpg" />
+    <None Remove="image\бакаут_древесина.jpg" />
+    <None Remove="image\бамбук_древесина.jpg" />
+    <None Remove="image\боярышник_древесина.jpg" />
+    <None Remove="image\брахихитон_древесина.jpg" />
+    <None Remove="image\бубинга_древесина.jpg" />
+    <None Remove="image\бук_древесина.jpg" />
+    <None Remove="image\венге_древесина.jpg" />
+    <None Remove="image\гевея_древесина.jpg" />
+    <None Remove="image\граб_древесина.jpg" />
+    <None Remove="image\грецкийорех_древесина.jpg" />
+    <None Remove="image\груша_древесина.jpg" />
+    <None Remove="image\драконовоедерево_древесина.jpg" />
+    <None Remove="image\ель_древесина.jpg" />
+    <None Remove="image\ива_древесина.jpg" />
+    <None Remove="image\ильм_древесина.jpg" />
+    <None Remove="image\карагач_древесина.jpg" />
+    <None Remove="image\каштан_древесина.jpg" />
+    <None Remove="image\клен_древесина.jpg" />
+    <None Remove="image\красное_древесина.jpg" />
+    <None Remove="image\крушина_древесина.jpg" />
+    <None Remove="image\липа_древесина.jpg" />
+    <None Remove="image\мербау_древесина.jpg" />
+    <None Remove="image\можжевельник_древесина.jpg" />
+    <None Remove="image\ольха_древесина.jpg" />
+    <None Remove="image\осина_древесина.jpg" />
+    <None Remove="image\падук_древесина.jpg" />
+    <None Remove="image\палисандр_древесина.jpg" />
+    <None Remove="image\платан_древесина.jpg" />
+    <None Remove="image\самшит_древесина.jpg" />
+    <None Remove="image\секвойя_древесина.jpg" />
+    <None Remove="image\сирень_древесина.jpg" />
+    <None Remove="image\снейквуд_древесина.jpg" />
+    <None Remove="image\сосна_древесина.jpg" />
+    <None Remove="image\тик_древесина.jpg" />
+    <None Remove="image\тис_древесина.jpg" />
+    <None Remove="image\тополь_древесина.jpg" />
+    <None Remove="image\туя_древесина.jpg" />
+    <None Remove="image\хвойная_древесина.jpg" />
+    <None Remove="image\черешня_древесина.jpg" />
+    <None Remove="image\черная_древесина.jpg" />
+    <None Remove="image\шелковица_древесина.jpg" />
+    <None Remove="image\эвкалипт_древесина.jpeg" />
+    <None Remove="image\эвкалипт_древесина.jpg" />
+    <None Remove="image\яблоня_древесина.jpg" />
+    <None Remove="image\ясень_древесина.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Style\Colors.xaml" />
+    <Page Remove="Style\Texts.xaml" />
+    <Page Remove="Style\Windows.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="7.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.20" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.20">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.20" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.20">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="image\default.jpg" />
+    <Resource Include="image\Empty.png" />
+    <Resource Include="image\акация_древесина.jpg" />
+    <Resource Include="image\амазак_древесина.jpg" />
+    <Resource Include="image\бакаут_древесина.jpg" />
+    <Resource Include="image\бамбук_древесина.jpg" />
+    <Resource Include="image\боярышник_древесина.jpg" />
+    <Resource Include="image\брахихитон_древесина.jpg" />
+    <Resource Include="image\бубинга_древесина.jpg" />
+    <Resource Include="image\бук_древесина.jpg" />
+    <Resource Include="image\венге_древесина.jpg" />
+    <Resource Include="image\гевея_древесина.jpg" />
+    <Resource Include="image\граб_древесина.jpg" />
+    <Resource Include="image\грецкийорех_древесина.jpg" />
+    <Resource Include="image\груша_древесина.jpg" />
+    <Resource Include="image\драконовоедерево_древесина.jpg" />
+    <Resource Include="image\ель_древесина.jpg" />
+    <Resource Include="image\ива_древесина.jpg" />
+    <Resource Include="image\ильм_древесина.jpg" />
+    <Resource Include="image\карагач_древесина.jpg" />
+    <Resource Include="image\каштан_древесина.jpg" />
+    <Resource Include="image\клен_древесина.jpg" />
+    <Resource Include="image\красное_древесина.jpg" />
+    <Resource Include="image\крушина_древесина.jpg" />
+    <Resource Include="image\липа_древесина.jpg" />
+    <Resource Include="image\мербау_древесина.jpg" />
+    <Resource Include="image\можжевельник_древесина.jpg" />
+    <Resource Include="image\ольха_древесина.jpg" />
+    <Resource Include="image\осина_древесина.jpg" />
+    <Resource Include="image\падук_древесина.jpg" />
+    <Resource Include="image\палисандр_древесина.jpg" />
+    <Resource Include="image\платан_древесина.jpg" />
+    <Resource Include="image\самшит_древесина.jpg" />
+    <Resource Include="image\секвойя_древесина.jpg" />
+    <Resource Include="image\сирень_древесина.jpg" />
+    <Resource Include="image\снейквуд_древесина.jpg" />
+    <Resource Include="image\сосна_древесина.jpg" />
+    <Resource Include="image\тик_древесина.jpg" />
+    <Resource Include="image\тис_древесина.jpg" />
+    <Resource Include="image\тополь_древесина.jpg" />
+    <Resource Include="image\туя_древесина.jpg" />
+    <Resource Include="image\хвойная_древесина.jpg" />
+    <Resource Include="image\черешня_древесина.jpg" />
+    <Resource Include="image\черная_древесина.jpg" />
+    <Resource Include="image\шелковица_древесина.jpg" />
+    <Resource Include="image\эвкалипт_древесина.jpeg" />
+    <Resource Include="image\эвкалипт_древесина.jpg" />
+    <Resource Include="image\яблоня_древесина.jpg" />
+    <Resource Include="image\ясень_древесина.jpg" />
+    <Resource Include="Style\Colors.xaml" />
+    <Resource Include="Style\Texts.xaml" />
+    <Resource Include="Style\Windows.xaml" />
+  </ItemGroup>
+
+</Project>
